@@ -10,15 +10,20 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Последняя строка для замены:
+$
+
 # Командная строка, история (начиная от свежего к старому):
+:q
+|2,0,1624045646,,"q"
 :wq
 |2,0,1624043697,,"wq"
-:q
-|2,0,1624043419,,"q"
 :q!
 |2,0,1624039779,,"q!"
 
 # Строка поиска, история (начиная от свежего к старому):
+? @$
+|2,1,1624045642,,"@$"
 
 # Выражение, история (начиная от свежего к старому):
 
@@ -27,10 +32,13 @@
 # Строка отладки, история (начиная от свежего к старому):
 
 # Регистры:
-""1	CHAR	0
+""0	LINE	0
+	version: '3.2'
+|3,1,0,1,1,0,1624045642,"version: '3.2'"
+"1	CHAR	0
 	version: '3.2'
 	
-|3,1,1,0,2,0,1623614917,"version: '3.2'",""
+|3,0,1,0,2,0,1623614917,"version: '3.2'",""
 "2	CHAR	0
 	services:
 	    jenkins:
@@ -139,34 +147,46 @@
 |<"RUN chown -R ${user} \"$JENKINS_HOME\" /usr/share/jenkins/ref","","# for main web interface:","EXPOSE ${http_port}","","# will be used by attached slave agents:","EXPOSE ${agent_port}","",""
 
 # Глобальные отметки:
-'0  8  12  ~/test_yourself/Jenkinsfile
-|4,48,8,12,1624043697,"~/test_yourself/Jenkinsfile"
-'1  1  20  ~/test_yourself/pyapp.py
-|4,49,1,20,1624043419,"~/test_yourself/pyapp.py"
-'2  8  20  ~/test_yourself/Jenkinsfile
-|4,50,8,20,1624043306,"~/test_yourself/Jenkinsfile"
-'3  15  8  ~/unix_exam/jenkins/Dockerfile
-|4,51,15,8,1624043274,"~/unix_exam/jenkins/Dockerfile"
-'4  1  21  ~/test_yourself/pyapp.py
-|4,52,1,21,1624039931,"~/test_yourself/pyapp.py"
-'5  8  20  ~/test_yourself/Jenkinsfile
-|4,53,8,20,1624039873,"~/test_yourself/Jenkinsfile"
+'0  8  0  ~/test_git_please
+|4,48,8,0,1624045646,"~/test_git_please"
+'1  8  12  ~/test_yourself/Jenkinsfile
+|4,49,8,12,1624043697,"~/test_yourself/Jenkinsfile"
+'2  1  20  ~/test_yourself/pyapp.py
+|4,50,1,20,1624043419,"~/test_yourself/pyapp.py"
+'3  8  20  ~/test_yourself/Jenkinsfile
+|4,51,8,20,1624043306,"~/test_yourself/Jenkinsfile"
+'4  15  8  ~/unix_exam/jenkins/Dockerfile
+|4,52,15,8,1624043274,"~/unix_exam/jenkins/Dockerfile"
+'5  1  21  ~/test_yourself/pyapp.py
+|4,53,1,21,1624039931,"~/test_yourself/pyapp.py"
 '6  8  20  ~/test_yourself/Jenkinsfile
 |4,54,8,20,1624039873,"~/test_yourself/Jenkinsfile"
-'7  8  14  ~/test_git_please/Jenkinsfile
-|4,55,8,14,1624039803,"~/test_git_please/Jenkinsfile"
-'8  8  9  ~/test_git_please/Jenkinsfile
-|4,56,8,9,1624039779,"~/test_git_please/Jenkinsfile"
-'9  15  8  ~/unix_exam/jenkins/Dockerfile
-|4,57,15,8,1624039545,"~/unix_exam/jenkins/Dockerfile"
+'7  8  20  ~/test_yourself/Jenkinsfile
+|4,55,8,20,1624039873,"~/test_yourself/Jenkinsfile"
+'8  8  14  ~/test_git_please/Jenkinsfile
+|4,56,8,14,1624039803,"~/test_git_please/Jenkinsfile"
+'9  8  9  ~/test_git_please/Jenkinsfile
+|4,57,8,9,1624039779,"~/test_git_please/Jenkinsfile"
 
 # Список прыжков (сначала более свежие):
+-'  8  0  ~/test_git_please
+|4,39,8,0,1624045646,"~/test_git_please"
+-'  8  12  ~/test_yourself/Jenkinsfile
+|4,39,8,12,1624043697,"~/test_yourself/Jenkinsfile"
 -'  8  12  ~/test_yourself/Jenkinsfile
 |4,39,8,12,1624043697,"~/test_yourself/Jenkinsfile"
 -'  1  20  ~/test_yourself/pyapp.py
 |4,39,1,20,1624043419,"~/test_yourself/pyapp.py"
 -'  1  20  ~/test_yourself/pyapp.py
 |4,39,1,20,1624043419,"~/test_yourself/pyapp.py"
+-'  1  20  ~/test_yourself/pyapp.py
+|4,39,1,20,1624043419,"~/test_yourself/pyapp.py"
+-'  1  20  ~/test_yourself/pyapp.py
+|4,39,1,20,1624043419,"~/test_yourself/pyapp.py"
+-'  8  20  ~/test_yourself/Jenkinsfile
+|4,39,8,20,1624043306,"~/test_yourself/Jenkinsfile"
+-'  8  20  ~/test_yourself/Jenkinsfile
+|4,39,8,20,1624043306,"~/test_yourself/Jenkinsfile"
 -'  8  20  ~/test_yourself/Jenkinsfile
 |4,39,8,20,1624043306,"~/test_yourself/Jenkinsfile"
 -'  8  20  ~/test_yourself/Jenkinsfile
@@ -187,6 +207,22 @@
 |4,39,15,8,1624043274,"~/unix_exam/jenkins/Dockerfile"
 -'  15  8  ~/unix_exam/jenkins/Dockerfile
 |4,39,15,8,1624043274,"~/unix_exam/jenkins/Dockerfile"
+-'  15  8  ~/unix_exam/jenkins/Dockerfile
+|4,39,15,8,1624043274,"~/unix_exam/jenkins/Dockerfile"
+-'  15  8  ~/unix_exam/jenkins/Dockerfile
+|4,39,15,8,1624043274,"~/unix_exam/jenkins/Dockerfile"
+-'  15  8  ~/unix_exam/jenkins/Dockerfile
+|4,39,15,8,1624043274,"~/unix_exam/jenkins/Dockerfile"
+-'  15  8  ~/unix_exam/jenkins/Dockerfile
+|4,39,15,8,1624043274,"~/unix_exam/jenkins/Dockerfile"
+-'  15  8  ~/unix_exam/jenkins/Dockerfile
+|4,39,15,8,1624043274,"~/unix_exam/jenkins/Dockerfile"
+-'  15  8  ~/unix_exam/jenkins/Dockerfile
+|4,39,15,8,1624043274,"~/unix_exam/jenkins/Dockerfile"
+-'  15  8  ~/unix_exam/jenkins/Dockerfile
+|4,39,15,8,1624043274,"~/unix_exam/jenkins/Dockerfile"
+-'  15  8  ~/unix_exam/jenkins/Dockerfile
+|4,39,15,8,1624043274,"~/unix_exam/jenkins/Dockerfile"
 -'  1  21  ~/test_yourself/pyapp.py
 |4,39,1,21,1624039931,"~/test_yourself/pyapp.py"
 -'  1  21  ~/test_yourself/pyapp.py
@@ -203,6 +239,38 @@
 |4,39,1,21,1624039931,"~/test_yourself/pyapp.py"
 -'  1  21  ~/test_yourself/pyapp.py
 |4,39,1,21,1624039931,"~/test_yourself/pyapp.py"
+-'  1  21  ~/test_yourself/pyapp.py
+|4,39,1,21,1624039931,"~/test_yourself/pyapp.py"
+-'  1  21  ~/test_yourself/pyapp.py
+|4,39,1,21,1624039931,"~/test_yourself/pyapp.py"
+-'  1  21  ~/test_yourself/pyapp.py
+|4,39,1,21,1624039931,"~/test_yourself/pyapp.py"
+-'  1  21  ~/test_yourself/pyapp.py
+|4,39,1,21,1624039931,"~/test_yourself/pyapp.py"
+-'  1  21  ~/test_yourself/pyapp.py
+|4,39,1,21,1624039931,"~/test_yourself/pyapp.py"
+-'  1  21  ~/test_yourself/pyapp.py
+|4,39,1,21,1624039931,"~/test_yourself/pyapp.py"
+-'  1  21  ~/test_yourself/pyapp.py
+|4,39,1,21,1624039931,"~/test_yourself/pyapp.py"
+-'  1  21  ~/test_yourself/pyapp.py
+|4,39,1,21,1624039931,"~/test_yourself/pyapp.py"
+-'  8  20  ~/test_yourself/Jenkinsfile
+|4,39,8,20,1624039873,"~/test_yourself/Jenkinsfile"
+-'  8  20  ~/test_yourself/Jenkinsfile
+|4,39,8,20,1624039873,"~/test_yourself/Jenkinsfile"
+-'  8  20  ~/test_yourself/Jenkinsfile
+|4,39,8,20,1624039873,"~/test_yourself/Jenkinsfile"
+-'  8  20  ~/test_yourself/Jenkinsfile
+|4,39,8,20,1624039873,"~/test_yourself/Jenkinsfile"
+-'  8  20  ~/test_yourself/Jenkinsfile
+|4,39,8,20,1624039873,"~/test_yourself/Jenkinsfile"
+-'  8  20  ~/test_yourself/Jenkinsfile
+|4,39,8,20,1624039873,"~/test_yourself/Jenkinsfile"
+-'  8  20  ~/test_yourself/Jenkinsfile
+|4,39,8,20,1624039873,"~/test_yourself/Jenkinsfile"
+-'  8  20  ~/test_yourself/Jenkinsfile
+|4,39,8,20,1624039873,"~/test_yourself/Jenkinsfile"
 -'  8  20  ~/test_yourself/Jenkinsfile
 |4,39,8,20,1624039873,"~/test_yourself/Jenkinsfile"
 -'  8  20  ~/test_yourself/Jenkinsfile
@@ -241,90 +309,28 @@
 |4,39,1,0,1624039853,"~/test_yourself/Jenkinsfile"
 -'  1  0  ~/test_yourself/Jenkinsfile
 |4,39,1,0,1624039853,"~/test_yourself/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
--'  8  14  ~/test_git_please/Jenkinsfile
-|4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
+-'  1  0  ~/test_yourself/Jenkinsfile
+|4,39,1,0,1624039853,"~/test_yourself/Jenkinsfile"
+-'  1  0  ~/test_yourself/Jenkinsfile
+|4,39,1,0,1624039853,"~/test_yourself/Jenkinsfile"
+-'  1  0  ~/test_yourself/Jenkinsfile
+|4,39,1,0,1624039853,"~/test_yourself/Jenkinsfile"
+-'  1  0  ~/test_yourself/Jenkinsfile
+|4,39,1,0,1624039853,"~/test_yourself/Jenkinsfile"
+-'  1  0  ~/test_yourself/Jenkinsfile
+|4,39,1,0,1624039853,"~/test_yourself/Jenkinsfile"
+-'  1  0  ~/test_yourself/Jenkinsfile
+|4,39,1,0,1624039853,"~/test_yourself/Jenkinsfile"
+-'  1  0  ~/test_yourself/Jenkinsfile
+|4,39,1,0,1624039853,"~/test_yourself/Jenkinsfile"
+-'  1  0  ~/test_yourself/Jenkinsfile
+|4,39,1,0,1624039853,"~/test_yourself/Jenkinsfile"
+-'  1  0  ~/test_yourself/Jenkinsfile
+|4,39,1,0,1624039853,"~/test_yourself/Jenkinsfile"
+-'  1  0  ~/test_yourself/Jenkinsfile
+|4,39,1,0,1624039853,"~/test_yourself/Jenkinsfile"
+-'  1  0  ~/test_yourself/Jenkinsfile
+|4,39,1,0,1624039853,"~/test_yourself/Jenkinsfile"
 -'  8  14  ~/test_git_please/Jenkinsfile
 |4,39,8,14,1624039803,"~/test_git_please/Jenkinsfile"
 -'  8  14  ~/test_git_please/Jenkinsfile
