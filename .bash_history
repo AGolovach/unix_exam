@@ -294,3 +294,238 @@ ls
 vim Dockerfile 
 clear
 ip a
+clear
+ls
+cd unix_exam/
+ls
+docker container ls
+docker container ls -l
+docker container prune
+docker container ls -l
+docker image ls
+clear
+docker-compose up
+clear
+docker container prune
+docker container ls -l
+docker-compose down
+clear
+docker image prune
+clear
+docker image ls -l
+docker image ls 
+docker rm -vf $(docker ps -a -q)
+docker image ls 
+docker rmi -f $(docker images -a -q)
+clear
+docker image ls
+docker container ls
+ls
+docker-compose up
+ls
+cd ..
+git init
+git commit -m "1st"
+git init
+git add .
+git commit -m "1st"
+git remote add origin https://github.com/AGolovach/unix_exam.git
+git push -u origin master 
+ls
+cd test_
+cd test_git_please/
+ls
+ls -l
+ls -all
+clear
+ls
+clear
+ls
+cd ..
+ls
+vim test_git_please/
+ls
+cd test_git_please/
+rm -rf .git
+ls -l
+cd ..
+ls
+cd test_yourself/
+ls
+ls -l
+ls
+ls -l
+cd ..
+ls
+cd unix_exam/
+ls
+ls -l
+cd gitea/
+ls -l
+rm -rf .git
+cd ..
+ls
+cd jenkins/
+rm -rf .git
+cd ..
+ls
+cd ..
+ls
+cd unix_exam/
+rm -rf .git
+cd ..
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+git add .
+git commit -m "2nd"
+git push -u origin master 
+ls
+ls -l
+clear
+ls
+cd test_git_please/
+ls
+git init
+git commit -m "first commit"
+git remote add origin ssh://git@192.168.1.70:222/golovach/test.git
+user@debian:~/test_git_please$
+git push -u origin master
+ls
+git init
+git add .
+git commit -m "help me"
+git remote add origin http://192.168.1.70:3000/golovach/test.git
+git push -u origin master
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin ssh://git@192.168.1.70:222/golovach/test.git
+git push -u origin master
+cd ..
+ls
+mkdir test_yourself
+cd test_yourself/
+ls
+clear
+touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin http://192.168.1.70:3000/golovach/test.git
+git push -u origin master
+ls
+cd ..
+ls
+cd test_git_please/
+ls
+vim newfile 
+ls
+cp rubyapp.rb ../test_yourself/
+ls
+cd ..
+clear
+ls
+cd test_yourself/
+ls
+git init
+git commit -m "script"
+git add .
+git init
+git add .
+git init
+git commit -m "script"
+git remote add origin http://192.168.1.70:3000/golovach/test.git
+git push -u origin master
+cd ..
+ls
+cd test_git_please/
+ls
+vim Jenkinsfile 
+clear
+ls
+vim j
+ls
+vim Jenkinsfile 
+ls
+cd ..
+ls
+cd unix_exam/
+ls
+cd jenkins/
+ls
+vim Dockerfile 
+ls
+cd ..
+;s
+ls
+cd test_git_please/
+ls
+vim Jenkinsfile 
+ls
+vim Jenkinsfile 
+cp Jenkinsfile ../test_yourself/
+cd ..
+;s
+ls
+cd test_yourself/
+ls
+clear
+ls
+vim Jenkinsfile 
+ls
+touch pyapp.pu
+ls
+rm pyapp.pu 
+touch pyapp.py
+clear
+ls
+vim pyapp.py 
+clear
+git init
+git add .
+git commit -m "python"
+git push -u origin master 
+clear
+ls
+git init
+git add .
+git commit -m "first commit"
+git remote add origin http://192.168.1.70:3000/golovach/test.git
+git push -u origin master
+ls
+cd ..
+ls
+cd unix_exam/
+ls
+cd jenkins/
+ls
+vim Dockerfile 
+ls
+cd ..
+ls
+cd test_yourself/
+ls
+vim Jenkinsfile 
+ls
+clea
+clear
+ls
+vim pyapp.py 
+docker container ls
+docker exec bd99e1e66546 ls /usr/bin | grep "python
+docker exec bd99e1e66546 ls /usr/bin | grep "python"
+ls
+vim Jenkinsfile 
+git init
+git add .
+git commit -m "py3"
+git push -u origin master 
+clear
+df -h
+clear
+df -h
